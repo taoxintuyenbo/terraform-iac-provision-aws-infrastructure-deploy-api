@@ -1,0 +1,10 @@
+variable "instance_type" {}
+variable "key_name" {}
+variable "public_subnets" {}
+variable "private_subnets" {}
+variable "ec2_public_sg_id" {}
+variable "ec2_private_sg_id" {}
+variable "user_data" {}
+variable "instance_profile_name" {}
+variable "name" {}
+variable "tags" {}
