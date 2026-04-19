@@ -11,4 +11,4 @@ database_subnet_cidr_block = ["10.10.150.0/24","10.10.151.0/24","10.10.152.0/24"
 instance_type = "t3.micro"
 key_name = "ec2-instances"
 
-db_name = "qmsapp-dev"
+db_name = "qmsappdev"
