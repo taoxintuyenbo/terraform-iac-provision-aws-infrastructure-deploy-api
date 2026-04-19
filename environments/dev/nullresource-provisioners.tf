@@ -6,11 +6,11 @@ resource "null_resource" "name" {
         host = module.ec2.ec2_public_instance_public_ip
         user = "ec2-user"
         password = ""
-        private_key = file("private-key/ec2-instances.pem")
+        private_key = file("${path.module}/../../private-key/ec2-instances.pem")
     }
 
     provisioner "file" {
-        source = "private-key/ec2-instances.pem"
+        source = "${path.module}/../../private-key/ec2-instances.pem"
         destination = "/home/ec2-user/ec2-instances.pem"
     }
 
