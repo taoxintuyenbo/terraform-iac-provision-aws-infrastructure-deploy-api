@@ -26,7 +26,7 @@ module "ec2"{
     ec2_public_sg_id = module.sg.ec2_public_sg_id
     ec2_private_sg_id = module.sg.ec2_private_sg_id
     instance_profile_name= module.iam.instance_profile_name
-    user_data = templatefile("${path.module}/app-install.sh",{
+    user_data = templatefile("${path.module}/../../app-install.sh",{
         aws_region = var.aws_region
         db_name = var.db_name
         secret_arn = module.rds.db_master_secret_arn
